@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "89f7f9b6-48f9-411f-9551-470ab5562362",
+		"name": "Mahasiswa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42768586",
+		"_collection_link": "https://kelompok-1-6653.postman.co/workspace/My-Workspace~01038e9d-a76d-4910-8b7d-2e86b6f0421f/collection/42768586-89f7f9b6-48f9-411f-9551-470ab5562362?action=share&source=collection_link&creator=42768586"
+	},
+	"item": [
+		{
+			"name": "Get Mhs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nip",
+							"value": "2313333",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Pepeng Shot",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/dosen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dosen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Mhs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "npm",
+							"value": "230302070",
+							"type": "text"
+						},
+						{
+							"key": "nama_mahasiswa",
+							"value": "Kristian Dimas",
+							"type": "text"
+						},
+						{
+							"key": "id_kelas",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_prodi",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "id_user",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mahasiswa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mahasiswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Mhs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "npm",
+							"value": "230302070",
+							"type": "text"
+						},
+						{
+							"key": "nama_mahasiswa",
+							"value": "Kristian Dimas",
+							"type": "text"
+						},
+						{
+							"key": "id_kelas",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_prodi",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "id_user",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mahasiswa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mahasiswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Mhs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "npm",
+							"value": "230302070",
+							"type": "text"
+						},
+						{
+							"key": "nama_mahasiswa",
+							"value": "Kristian Dimas",
+							"type": "text"
+						},
+						{
+							"key": "id_kelas",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_prodi",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "id_user",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/mahasiswa/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mahasiswa",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
